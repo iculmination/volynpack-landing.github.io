@@ -23,14 +23,13 @@ body {
 .shadow-main-bottom {
   /* box-shadow: 0px 20px 10px var(--primary-color); */
   box-shadow: 0px 2px 5px gray;
+  background-color: rgba(237, 232, 226, 0.7);
 
-  opacity: 0.85;
-  backdrop-filter: blur(2px)
+  backdrop-filter: blur(6px);
 }
 
-.shadow-main-color-bottom{
+.shadow-main-color-bottom {
   box-shadow: 0px 20px 10px var(--primary-color);
-
 }
 
 .border-secondary-img {
@@ -55,10 +54,9 @@ body {
 
 .bg-img-bags {
   background: url("./media/bg-bags.png");
-  background-size:cover;
-  background-attachment: fixed;  
+  background-size: cover;
+  background-attachment: fixed;
 }
-
 
 .embla {
   overflow: hidden;
