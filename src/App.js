@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { Element } from "react-scroll";
+import Header from "./components/Header";
+import Main from "./components/sections/Main";
+import Process from "./components/sections/Process";
+import Services from "./components/sections/Services";
+import Offer from "./components/sections/Offer";
+import About from "./components/sections/About";
+import Reviews from "./components/sections/Reviews";
+import Form from "./components/sections/Form";
+import Contacts from "./components/sections/Contacts";
 
-function App() {
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Element name="main">
+        <Main />
+      </Element>
+      <Element name="services">
+        <Services />
+      </Element>
+      <Element name="offer">
+        <Offer />
+      </Element>
+      <Element name="process">
+        <Process />
+      </Element>
+      <Element name="about">
+        <About />
+      </Element>
+      <Element name="reviews">
+        <Reviews />
+      </Element>
+      <Element name="form">
+        <Form />
+      </Element>
+      <Element name="contacts">
+        <Contacts />
+      </Element>
+    </>
   );
-}
+};
 
 export default App;
