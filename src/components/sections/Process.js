@@ -18,7 +18,7 @@ const Process = () => {
   ];
 
   return (
-    <div className="w-full pl-4 md:pl-32 pr-4 md:pr-32 bg-main-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 pt-16 md:pt-36 pb-12 md:pb-24">
+    <div className="w-full pl-4 md:pl-32 pr-4 md:pr-32 bg-main-color xl:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 pt-16 md:pt-36 pb-12 md:pb-24">
       <h2 className="col-span-3 text-3xl md:text-5xl self-center mx-auto font-bold text-gray-700 mb-6">
         Швидкий та прозорий процес виготовлення
       </h2>
@@ -33,7 +33,10 @@ const Elements = ({ data }) => {
     <>
       {data.map((el, i) => {
         return (
-          <div className="flex flex-col md:flex-row mt-4 md:mt-16 ml-4 md:ml-16" key={i}>
+          <div
+            className="flex flex-col md:flex-row mt-4 md:mt-16 ml-4 md:ml-16"
+            key={i}
+          >
             <div className="text-xl md:text-6xl text-secondary-color font-bold mb-4 md:mr-12 ">
               {i + 1}
             </div>

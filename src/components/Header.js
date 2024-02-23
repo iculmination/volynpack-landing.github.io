@@ -1,10 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, scroller } from "react-scroll";
+import insta from "../media/instagram-white-icon.webp";
+import viber from "../media/viber-white-icon.webp";
+import tg from "../media/telegram-white-icon.webp";
 import phone from "../media/Tilda_Icons_2web_phone.svg";
 import burgerIcon from "../media/hamburger-menu.svg";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (isMobileMenuOpen) {
+  //       // Заборона скролінгу при відкритому меню
+  //       document.body.style.overflow = "hidden";
+  //     } else {
+  //       // Відновлення скролінгу при закритті меню
+  //       document.body.style.overflow = 'auto';
+  //     document.body.style.overflowY = 'scroll';
+
+  //     }
+  //   };
+
+  //   // Додавання обробника подій при відкритті/закритті меню
+  //   if (isMobileMenuOpen) {
+  //     document.addEventListener("scroll", handleScroll);
+  //   }
+
+  //   // Видалення обробника подій при видаленні компонента або закритті меню
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isMobileMenuOpen]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -113,6 +139,44 @@ const Header = () => {
             <div className="flex items-center py-4">
               <img src={phone} alt="call" className="w-6 h-6 mr-2" />
               <a href="tel:1234567890">+1-234-5677-890</a>
+            </div>
+            <div className="flex mt-4">
+              <div className="w-12 h-12 lg:w-16 lg:h-16 mr-2 lg:mr-6 bgc-secondary rounded-full flex text-white text-base md:text-xl cursor-pointer text-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <a
+                  href="https://www.instagram.com/volynpack.ua?igsh=anhzOTgwOHFnaXox"
+                  className="flex mx-auto w-full h-full justify-center items-center"
+                >
+                  <img
+                    src={insta}
+                    alt="instagram"
+                    className="w-5 h-5 lg:w-7 lg:h-7"
+                  />
+                </a>
+              </div>
+              <div className="w-12 h-12 lg:w-16 lg:h-16 mr-2 lg:mr-6 bgc-secondary rounded-full flex text-white text-base md:text-xl cursor-pointer text-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <a
+                  href="https://www.instagram.com/volynpack.ua?igsh=anhzOTgwOHFnaXox"
+                  className="flex mx-auto w-full h-full justify-center items-center"
+                >
+                  <img
+                    src={viber}
+                    alt="viber"
+                    className="w-5 h-5 lg:w-7 lg:h-7"
+                  />
+                </a>
+              </div>
+              <div className="w-12 h-12 lg:w-16 lg:h-16 bgc-secondary rounded-full flex text-white text-base md:text-xl cursor-pointer text-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <a
+                  href="https://www.instagram.com/volynpack.ua?igsh=anhzOTgwOHFnaXox"
+                  className="flex mx-auto w-full h-full justify-center items-center"
+                >
+                  <img
+                    src={tg}
+                    alt="telegram"
+                    className="w-5 h-5 lg:w-7 lg:h-7"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         )}

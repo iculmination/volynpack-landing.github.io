@@ -11,7 +11,7 @@ const Main = () => {
         <h1 className="text-4xl lg:text-6xl font-bold mt-4 md:mt-0 text-gray-800">
           Виготовляємо <span className="text-secondary-color">якісні</span> паперові пакети
         </h1>
-        <p className="mt-2 text-xl lg:text-2xl">Висока якість та вигідні ціни</p>
+        <p className="mt-2 text-xl lg:text-2xl lg:mb-16">Висока якість та вигідні ціни</p>
         <div className="flex mt-4 justify-center md:justify-start">
           <div className="w-32 h-12 lg:w-48 lg:h-16 mr-2 lg:mr-12 bgc-secondary rounded-full flex text-white text-base lg:text-xl cursor-pointer text-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <a href="#" className="w-full">
