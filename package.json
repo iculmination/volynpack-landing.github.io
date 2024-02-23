@@ -1,6 +1,5 @@
 {
   "name": "volynpack-landing",
-  "homepage": "https://github.com/iculmination/volynpack-landing.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
